@@ -9,7 +9,7 @@ sudo apt autoremove -y
 
 # Step 2: Installing necessary apps
 sudo apt-get update
-sudo apt-get install network-manager qbittorrent gsmartcontrol vnstat ufw apt-transport-https curl gnome-tweaks papirus-icon-theme -y
+sudo apt-get install git network-manager qbittorrent gsmartcontrol vnstat ufw apt-transport-https curl gnome-tweaks papirus-icon-theme -y
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
 sudo apt-get install speedtest -y
 
