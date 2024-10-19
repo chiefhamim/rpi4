@@ -35,6 +35,13 @@ sudo ufw allow 62758
 # Icon themes - Papirus-dark
 
 # Network optimization for 1Gb/s connection
+sudo fallocate -l 6G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+sudo swapon --show
+free -h
 
 # Set maximum number of open files
 echo "Setting maximum number of open files..."
